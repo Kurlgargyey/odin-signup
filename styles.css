@@ -1,5 +1,6 @@
 * {
  border: 0px solid red;
+ box-sizing: border-box;
 }
 
 @font-face {
@@ -7,7 +8,7 @@
  src: url("assets/Norse-Bold.otf");
 }
 
-body {
+body, html {
  padding: 0;
  margin: 0;
 
@@ -25,6 +26,7 @@ a {
  flex-direction: row;
 
  margin: 0;
+ height: 100vh;
 }
 
 .form-container {
@@ -69,13 +71,27 @@ label {
  margin-right: 5%;
  margin-bottom: 20px;
 
+ font-size: 0.95rem;
  color: #494a4b;
  text-shadow: 1px 1px 1px #d3d2d2;
 }
 
 input {
- border: 1px solid #E5E7EB;
+ appearance: none;
+ border: 2px solid #E5E7EB;
  border-radius: 3px;
+
+ padding: 5px;
+
+ font-size: 1rem
+}
+
+input:active,
+input:focus,
+input:focus-visible {
+ outline: 0;
+ border: 2px solid #7591c9;
+ box-shadow: 1px 1px 3px #d3d2d2;
 }
 
 button {
@@ -101,7 +117,7 @@ button {
  background-size: auto;
  background-repeat: no-repeat;
  width: min(40vw, 647px);
- height: 100vh;
+ height: 100%;
 
  display: flex;
 }
