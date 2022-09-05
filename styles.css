@@ -134,8 +134,8 @@ button {
 }
 
 .logo > img {
- width: min(20%, 5rem);
- height: auto;
+ width: auto;
+ height: min(calc(10px + 10vw), 7rem);
 
  margin-left: auto;
 }
@@ -143,6 +143,6 @@ button {
 .logo > span {
  color: white;
  font-family: NorseBold;
- font-size: min(7rem, 20vw);
+ font-size: min(calc(10px + 10vw), 7rem);
  margin-right: auto;
 }
