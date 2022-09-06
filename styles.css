@@ -38,12 +38,12 @@ a {
 }
 
 .hero-text {
- margin-top: 10vh;
- margin-bottom: 10vh;
+ margin-top: 5vh;
+ margin-bottom: 5vh;
  width: 100%;
  padding: 0 30px;
 
- font-size: 24px;
+ font-size: 1.5rem;
  font-weight: bold;
 }
 
@@ -54,7 +54,7 @@ form {
 
 .fields {
  background-color: white;
- padding: 30px;
+ padding: 10px 10px 10px 30px;
  box-shadow: 0 2px 5px -5px;
  margin-bottom: 30px;
 }
@@ -96,6 +96,13 @@ input:focus-visible {
 
 input:invalid {
  border-color: rgb(212, 78, 78)
+}
+
+div #match-message {
+ color:rgb(212, 78, 78);
+ overflow: hidden;
+ height: 0px;
+ transition: 0.28s;
 }
 
 button {
